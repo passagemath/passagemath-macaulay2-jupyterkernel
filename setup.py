@@ -21,7 +21,7 @@ class install_kernel_spec_mixin:
         """
         from m2_kernel.install import install_kernel_assets
 
-        install_kernel_assets()
+        install_kernel_assets(user=False, prefix=self.install_data)
 
 
 class sage_install(install, install_kernel_spec_mixin):
