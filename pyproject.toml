@@ -1,7 +1,6 @@
 [build-system]
 requires = [
     "ipykernel",
-    "notebook",
     "pexpect",
     "setuptools",
 ]
@@ -19,7 +18,6 @@ maintainers = [
 readme = "README.md"
 dependencies = [
     "ipykernel",
-    "notebook",
     "pexpect",
     "passagemath-macaulay2",
 ]
