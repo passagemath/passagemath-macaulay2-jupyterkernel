@@ -1,4 +1,4 @@
-# M2JK — Jupyter kernel for Macaulay2
+# passagemath-macaulay2-jupyterkernel — Jupyter kernel for Macaulay2 (passagemath fork)
 
 [![](https://img.shields.io/travis/radoslavraynov/Macaulay2-Jupyter-Kernel.svg?style=flat-square)](https://travis-ci.org/radoslavraynov/Macaulay2-Jupyter-Kernel/)
 [![](https://img.shields.io/pypi/v/macaulay2-jupyter-kernel.svg?style=flat-square)](https://pypi.org/project/macaulay2-jupyter-kernel/)
@@ -34,15 +34,15 @@ Alternatively, you can configure M2JK to use a specific binary.
 You can install the latest release version directly from PyPI by
 
 ```bash
-$ pip3 install macaulay2-jupyter-kernel
+$ pip3 install passagemath-macaulay2-jupyterkernel
 $ python3 -m m2_kernel.install
 ```
 
 Alternatively, you can install the latest development version from source by
 
 ```bash
-$ git clone https://github.com/radoslavraynov/macaulay2-jupyter-kernel.git
-$ cd macaulay2-jupyter-kernel
+$ git clone https://github.com/passagemath/passagemath-macaulay2-jupyterkernel.git
+$ cd passagemath-macaulay2-jupyterkernel
 $ pip3 install .
 $ python3 -m m2_kernel.install
 ```
