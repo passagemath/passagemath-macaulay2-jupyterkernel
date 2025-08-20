@@ -19,9 +19,9 @@ class install_kernel_spec_mixin:
             The files are generated, not copied. Therefore, we cannot
             use ``data_files`` for this.
         """
-        from m2_kernel.install import install_kernel_spec
+        from m2_kernel.install import install_kernel_assets
 
-        install_kernel_spec()
+        install_kernel_assets()
 
 
 class sage_install(install, install_kernel_spec_mixin):
