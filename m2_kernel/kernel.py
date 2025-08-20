@@ -66,13 +66,13 @@ class M2Interp:
     patt_input = re.compile(br'^i(\d+)\s:')
     debug = False
 
-    def __init__(self, execpath=pexpect.which('M2'), timeout=4, configpath=None):
+    def __init__(self, execpath=pexpect.which('sage'), timeout=4, configpath=None):
         """"""
         self.conf = M2Config(execpath, configpath)
         self.proc = None
         self.proc_command = self.conf.args.execpath
         self.proc_kwargs = {
-            'args': ['--silent', '--no-debug', '-e', 'load("init.m2")'],
+            'args': ['-M2', '--silent', '--no-debug', '-e', 'load("init.m2")'],
             'cwd': os.path.dirname(__file__) + '/assets/m2-code/',
             'timeout': timeout
         }
